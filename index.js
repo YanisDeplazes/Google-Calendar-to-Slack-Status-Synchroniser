@@ -58,7 +58,7 @@ app.post('/', (req, res, next) => {
     status = status.replace(awayToken, '').trim();
   }
   // set status
-  status = `${status};
+  status = `${status}`;
   let profile = JSON.stringify({
     "status_text": status,
     "status_emoji": statusEmoji,
