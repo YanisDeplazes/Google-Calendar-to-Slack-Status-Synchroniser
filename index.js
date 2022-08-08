@@ -58,7 +58,7 @@ app.post('/', (req, res, next) => {
     status = status.replace(awayToken, '').trim();
   }
   // set status
-  status = `${status} from ${start.format('h:mm')} to ${end.format('h:mm a')} ${process.env.TIME_ZONE}`;
+  status = `${status};
   let profile = JSON.stringify({
     "status_text": status,
     "status_emoji": statusEmoji,
